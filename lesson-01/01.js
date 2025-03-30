@@ -3,9 +3,10 @@
 
 // your code
 let sum = 0;
-let count = 1;
+let count = 0;
 
-while (count <= 20) {
+while (count < 20) {
     count++;
     sum = sum + count;
 }
+
