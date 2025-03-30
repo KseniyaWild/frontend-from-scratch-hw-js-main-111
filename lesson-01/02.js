@@ -6,4 +6,13 @@
 */
 
 // your code
-let factorial
+let factorial = 1;
+let n = 0;
+while (n < 10) {
+  n++;
+  console.log(n);
+  
+  factorial = factorial * n;
+}
+console.log(factorial);
+
