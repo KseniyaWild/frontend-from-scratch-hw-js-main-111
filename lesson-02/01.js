@@ -9,10 +9,15 @@
 
 // тестовые данные (значения можно менять)
 const isAdmin = false
-const isVerifiedUser = true
-const hasSpecialPermission = true
-const hasTemporaryPass = false
+const isVerifiedUser = true //проверенный пользователь
+const hasSpecialPermission = true //имеет специальное разрешение
+const hasTemporaryPass = false // имеет временный пропуск
 
-let isAccess
+let isAccess;
 
 // your code
+while(isAdmin) {
+    isAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass);
+    alert('Доступ разрешен');
+    isAdmin = true;
+}
