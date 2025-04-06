@@ -18,6 +18,5 @@ let isAccess;
 // your code
 while(isAdmin) {
     isAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass);
-    alert('Доступ разрешен');
     isAdmin = true;
 }
