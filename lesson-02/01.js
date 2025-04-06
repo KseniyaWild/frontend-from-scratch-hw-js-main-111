@@ -16,7 +16,6 @@ const hasTemporaryPass = false // имеет временный пропуск
 let isAccess;
 
 // your code
-while(isAdmin) {
-    isAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass);
-    isAdmin = true;
-}
+
+isAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass);
+console.log(isAccess);
