@@ -6,13 +6,13 @@
 
 // your code
 let sum = 0;
-let count = 0;
-
-while (count < 20) {
+let count = 1;
+while (count <= 20) {
+  if(count % 2 === 1){
+    sum = sum + count;
+  } 
   count++;
   
-  if (count % 2 === 1) {
-    sum = sum + count;
-  }
+ console.log(sum); 
 }
 
