@@ -4,4 +4,6 @@ function calculateAverage(a, b) {
     return (a + b) / 2;
 }
 
-let result = calculateAverage(4, 8);
+calculateAverage(4, 8);
+console.log(calculateAverage(4,8));
+
