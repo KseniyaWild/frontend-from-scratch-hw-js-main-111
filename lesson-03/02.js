@@ -10,4 +10,3 @@ function isEven(number) {
 }
 
 let result = isEven(111);
-console.log(result);

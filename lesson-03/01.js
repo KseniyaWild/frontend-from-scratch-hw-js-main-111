@@ -5,4 +5,3 @@ function calculateAverage(a, b) {
 }
 
 let result = calculateAverage(4, 8);
-console.log(result);

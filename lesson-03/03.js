@@ -11,5 +11,4 @@ function findLargest(a, b, c) {
 }
 
 let result = findLargest(77, 11, 22);
-console.log(result);
 
