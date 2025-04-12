@@ -18,5 +18,5 @@ let isAccess;
 // your code
 
 isAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass);
-console.console.log(isAccess);
+console.log(isAccess);
 
