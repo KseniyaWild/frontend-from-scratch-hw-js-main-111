@@ -13,7 +13,6 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
-const elements = [1, 2, 3, 4];
 
 function includesElement(array, element) {
     for(let i = 0; i < array.length; i++) {
@@ -24,6 +23,6 @@ function includesElement(array, element) {
     return false;
 }
 
-includesElement(elements, 3);
+includesElement([1, 2, 3, 4], 3);
 
 
