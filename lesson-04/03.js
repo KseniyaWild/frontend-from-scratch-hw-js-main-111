@@ -28,7 +28,17 @@ function findCommonElements(array1, array2) {
     }
     return newArray;
 }
-console.log(findCommonElements([1, 2, 3], [2, 3, 4]));
+console.log(findCommonElements([1, 2, 3], [9, 11]));
 
 
-    
+// function findCommonElements(array1, array2)
+// {
+//     let newArray = [];
+//     for (let i = 0; i < array1.length; i++) {
+//         if (array2.includes(array1[i])) {
+//             newArray.push(array1[i]);
+//         }
+//     }
+//     return newArray;
+// }
+// console.log(findCommonElements([1, 2, 3], [2, 3, 4]));
