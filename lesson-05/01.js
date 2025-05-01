@@ -16,13 +16,31 @@ const game = {
     lumber: 100,
   },
   addResource(resource, amount) {
-    if(!game.resources === true) {
-      return console.log('Invalid resource');
+    if(!game.resources[resource]) {
+      console.log('Invalid resource');
+      return;
     }
     game.resources[resource] += amount;
   }
 }
+
+game.addResource('err', 1);
 console.log(game);
 
-const newGame = addResource('world', 2)
-console.log(newGame);
+// const game = {
+//   resources: {
+//     gold: 250,
+//     lumber: 100,
+//   },
+//   addResource(resource, amount) {
+//     if (!(resource in this.resources)) {
+//       console.log("Invalid resource");
+//       return;
+//     }
+//     this.resources[resource] += amount;
+//   }
+// };
+
+// game.addResource('err', 1);
+// console.log(game);
+
