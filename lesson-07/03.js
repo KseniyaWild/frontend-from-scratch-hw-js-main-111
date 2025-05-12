@@ -13,9 +13,11 @@ function truncate(str, maxLength) {
   for(let i = 0; i < str.length; i++){
     if(str.length > maxLength){
       return str.substring(0, maxLength) + '...';
+    } else if(str === ' '){
+      return '';
     } else {
       return str;
     }
   }
 }
-console.log(truncate('', 20));
+console.log(truncate(' ', 20));
