@@ -14,6 +14,8 @@ function truncate(str, maxLength) {
   for(let i = 0; i < str.length; i++){
     if(str.length > maxLength){
       return newStr += str.substring(0, maxLength) + '...';
+    } else {
+      return newStr += str;
     }
   }
 }
