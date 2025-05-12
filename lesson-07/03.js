@@ -10,13 +10,12 @@
 */
 
 function truncate(str, maxLength) {
-  let newStr = '';
   for(let i = 0; i < str.length; i++){
     if(str.length > maxLength){
-      return newStr += str.substring(0, maxLength) + '...';
+      return str.substring(0, maxLength) + '...';
     } else {
-      return newStr += str;
+      return str;
     }
   }
 }
-console.log(truncate('Короткая строка', 20));
+console.log(truncate('', 20));
