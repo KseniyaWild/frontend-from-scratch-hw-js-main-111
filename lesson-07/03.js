@@ -15,7 +15,7 @@ function truncate(str, maxLength) {
       return str.substring(0, maxLength) + '...';
     } else if(str === ''){
       console.log('Пустая строка');
-      return str.toString();
+      return '';
     }
     else {
       return str;
