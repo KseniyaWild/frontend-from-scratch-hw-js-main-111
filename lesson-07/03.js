@@ -13,9 +13,11 @@ function truncate(str, maxLength) {
   for(let i = 0; i < str.length; i++){
     if(str.length > maxLength){
       return str.substring(0, maxLength) + '...';
-    } else if(`${str}` = ''){
-      return '';
-    } else {
+    } else if(str === ''){
+      console.log('Пустая строка');
+      return str.toString();
+    }
+    else {
       return str;
     }
   }
