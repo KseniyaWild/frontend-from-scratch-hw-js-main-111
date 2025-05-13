@@ -13,12 +13,13 @@ function truncate(str, maxLength) {
   for(let i = 0; i < str.length; i++){
     if(str.length > maxLength){
       return str.substring(0, maxLength) + '...';
-    } else if(str.trim() === ''){
-      return '';
-    }
+    } 
     else {
       return str;
     }
   }
+  return '';
 }
-console.log(truncate('', 20));
+const result = truncate('Вот, что мне действительно нравится в этом', 20);
+console.log(result);
+
