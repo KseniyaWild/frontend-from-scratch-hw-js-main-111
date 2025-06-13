@@ -22,22 +22,22 @@ let prevBtn = document.getElementById('prev-button');
 let nextBtn = document.getElementById('next-button');
 let imgMain = document.getElementById('web-tech-image');
 
-let index = 0;
+// let index = 0;
 
-function updateImages() {
-imgMain.src = WEB_TECH_IMAGES[index]
-}
+// function updateImages() {
+// imgMain.src = WEB_TECH_IMAGES[index]
+// }
 
-prevBtn.addEventListener('click', function () {
+// prevBtn.addEventListener('click', function () {
 
-  index = (index - 1 + WEB_TECH_IMAGES.length) % WEB_TECH_IMAGES.length;
-  updateImages();
-})
+//   index = (index - 1 + WEB_TECH_IMAGES.length) % WEB_TECH_IMAGES.length;
+//   updateImages();
+// })
 
-nextBtn.addEventListener('click', function () {
+// nextBtn.addEventListener('click', function () {
 
-  index = (index + 1) % WEB_TECH_IMAGES.length; // Переход к следующему изображению
-  updateImages();
-})
+//   index = (index + 1) % WEB_TECH_IMAGES.length; // Переход к следующему изображению
+//   updateImages();
+// })
 
-updateImages();
+// updateImages();

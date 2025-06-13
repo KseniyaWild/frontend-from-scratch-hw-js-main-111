@@ -29,8 +29,8 @@ const startButton = document.getElementById('start')
 const cancelButton = document.getElementById('cancel')
 const countdownDisplay = document.getElementById('countdown')
 
-let isTimerStarted = false
-let timerId
+let isTimerStarted = false // как "выключатель" (true = таймер работает, false = не работает)
+let timerId // хранит "ссылку" на работающий таймер
 
 startButton.addEventListener('click', () => {
   // Если таймер уже запущен - ничего не делаем
@@ -55,7 +55,7 @@ startButton.addEventListener('click', () => {
 
 cancelButton.addEventListener('click', () => {
   // Отменяем только если таймер работает
-  if (isTimerStarted) {
+  if (isTimerStarted) { //отменяем только работающий таймер
     clearInterval(timerId)
     isTimerStarted = false
     countdownDisplay.textContent = 'Отменено'
